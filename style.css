@@ -38,7 +38,7 @@ nav a:hover {
 
 /* HERO - YOUR MOUNTAIN IMAGE */
 #home {
-  background-image: url('images/mountain.jpeg');
+  background-image: url('mountain.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
