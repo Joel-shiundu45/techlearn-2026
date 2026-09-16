@@ -1,0 +1,286 @@
+/* TECH LEARN - style.css with Mountain Background */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #0A1A2F;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #0A1A2F;
+  padding: 18px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #E8F1F8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #00E5FF;
+}
+
+/* HERO - YOUR MOUNTAIN IMAGE */
+#home {
+  background-image: url('images/mountain.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 40px 20px;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 26, 47, 0.65);
+}
+
+#home h1,
+#home p,
+#home a {
+  position: relative;
+  z-index: 2;
+}
+
+#home h1 {
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+  margin-bottom: 20px;
+}
+
+#home p {
+  color: #E8F1F8;
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+}
+
+#home a {
+  display: inline-block;
+  background: #00E5FF;
+  color: #0A1A2F;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#home a:hover {
+  background: white;
+}
+
+#home img {
+  display: none;
+}
+
+section {
+  padding: 70px 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: #0A1A2F;
+}
+
+#courses {
+  background: #f8fbff;
+}
+
+#courses article {
+  background: white;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 5px solid #00E5FF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+#courses ul {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#pricing {
+  background: white;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.price-card,
+.price.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 30px 20px;
+  width: 290px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+}
+
+.price-card h1 {
+  color: #0A1A2F;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.price-card h1 span {
+  font-size: 16px;
+  color: #666;
+}
+
+.price-card ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.price-card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.price-card button {
+  background: #0A1A2F;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.price-card button:hover {
+  background: #00E5FF;
+  color: #0A1A2F;
+}
+
+.featured {
+  border: 2px solid #00E5FF;
+  transform: scale(1.05);
+}
+
+.featured button {
+  background: #00E5FF;
+  color: #0A1A2F;
+}
+
+#testimonials {
+  background: #0A1A2F;
+}
+
+#testimonials h2 {
+  color: white;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial,
+.testimonials {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  width: 300px;
+  color: white;
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+#newsletter {
+  background: #E8F1F8;
+  text-align: center;
+}
+
+#newsletter form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#newsletter input {
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  width: 240px;
+}
+
+#newsletter button {
+  background: #00E5FF;
+  color: #0A1A2F;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#about {
+  background: white;
+  text-align: center;
+}
+
+#about ol {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2;
+}
+
+footer {
+  background: #06101F;
+  color: #E8F1F8;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+footer a {
+  color: #00E5FF;
+  text-decoration: none;
+}
