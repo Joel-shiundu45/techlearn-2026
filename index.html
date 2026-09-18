@@ -2,164 +2,141 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechLearn-Learn to code</title>
+  <title>TechLearn - Learn to code</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!--1.NAVIGATION-->
   <header>
     <nav>
       <a href="#home">Home</a>
       <a href="#courses">Courses</a>
+      <a href="#pricing">Pricing</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
-  <!--HERO SECTION-->
-  <section id="home">
-    <h1>Learn Web development in 2026</h1>
-    <p>web development is how we build wwebsites and apps. In this page you will find 3 beginner-friendly videos to get
-      you started with HTML,CSS and JavaScript</p>
-    <a href="courses">Start Learning</a>
-    <img src="images/download=d.jfif" alt="Students learning web development">
 
+  <!-- HERO with your mountain background -->
+  <section id="home" class="hero">
+    <div class="overlay">
+      <h1>Learn Web development in 2026</h1>
+      <p>Web development is how we build websites and apps. Here you will find 3 beginner-friendly videos to get you
+        started with HTML, CSS and JavaScript</p>
+      <a href="#courses" class="btn">Start Learning</a>
+    </div>
   </section>
-  <section>
-    <!--COURSES SECTION-->
-    <section id="courses">
-      <h2> Our Courses</h2>
-      <article>
-        <h3>HTML & CSS Fundamentals</h3>
-        <p>Learn the basics of HTML and CSS, the building blocks of web development. This course will teach you how to
-          create and style web pages.</p>
-        <ul>
-          <li>12Lessons</li>
-          <li>3 projects</li>
 
+  <section id="courses">
+    <h2>Our Courses</h2>
+    <article>
+      <h3>HTML & CSS Fundamentals</h3>
+      <p>Learn the basics of HTML and CSS, the building blocks of web development.</p>
+      <ul>
+        <li>12 Lessons</li>
+        <li>3 projects</li>
+      </ul>
+    </article>
+    <article>
+      <h3>JavaScript Essentials</h3>
+      <p>Learn the fundamentals of JavaScript, the programming language of the web.</p>
+      <ul>
+        <li>15 Lessons</li>
+        <li>5 projects</li>
+      </ul>
+    </article>
+    <article>
+      <h3>React.js</h3>
+      <p>Build modern web apps used by top companies</p>
+      <ul>
+        <li>20 Lessons</li>
+        <li>5 Capstone projects</li>
+      </ul>
+    </article>
+  </section>
+
+  <section id="pricing">
+    <h2>Our Pricing</h2>
+    <div class="pricing-container">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <h1>$25<span>/month</span></h1>
+        <ul>
+          <li>HTML & CSS Course</li>
+          <li>3 Projects</li>
+          <li>Certificate</li>
         </ul>
-      </article>
-      <article>
-        <h3>JavaScript Essentials</h3>
-        <p>Learn the fundamentals of JavaScript, the programming language of the web. This course will teach you how to
-          add interactivity to your web pages.</p>
+        <button>Choose Basic</button>
+      </div>
+      <div class="price-card featured">
+        <h3>Pro</h3>
+        <h1>$45<span>/month</span></h1>
         <ul>
-          <li>15 Lessons</li>
-          <li>5 projects</li>
+          <li>All basic features</li>
+          <li>JavaScript + React</li>
+          <li>Certificate + Mentorship</li>
         </ul>
-      </article>
-      <article>
-        <h3>React.js</h3>
-        <p>Build modern web apps used by top companies</p>
+        <button>Choose Pro</button>
+      </div>
+      <div class="price-card">
+        <h3>Premium</h3>
+        <h1>$65<span>/month</span></h1>
         <ul>
-          <li>20 Lessons</li>
-          <li>5 Capstone projects</li>
+          <li>All pro features</li>
+          <li>Job Support</li>
+          <li>1-on-1 Calls</li>
+        </ul>
+        <button>Choose Premium</button>
+      </div>
+    </div>
+  </section>
 
-      </article>
+  <section id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"TechLearn changed my life. I got a job in 2 months!"</p>
+        <h4>Brain, Nairobi</h4><span>⭐⭐⭐⭐⭐</span>
+      </div>
+      <div class="testimonial">
+        <p>"Best explanation of HTML & CSS. So simple to follow"</p>
+        <h4>Sarah, Kisumu</h4><span>⭐⭐⭐⭐</span>
+      </div>
+      <div class="testimonial">
+        <p>"The projects are real. I built my portfolio here"</p>
+        <h4>Leovard, Busia</h4><span>⭐⭐⭐⭐</span>
+      </div>
+    </div>
+  </section>
 
-    </section>
-    <section>
-      <!--PRICING TABLE-->
-      <section id="pricing">
-        <h2>Our pricing</h2>
-        <div class="pricing-container">
-          <div class="price card">
-            <h3>Basic</h3>
-            <h1>$25<span>/month</span></h1>
-            <ul>
-              <li><abbr>HTML</abbr>&CSS Course</li>
-              <li>3 Projects</li>
-              <li>Certificate</li>
-            </ul>
-            <button>Choose Basic</button>
+  <section id="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Get free tutorials and job tips weekly</p>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <button type="submit">Subscribe Now</button>
+    </form>
+  </section>
 
-          </div>
-          <div class="price-card featured">
-            <h3>Pro</h3>
-            <h1>$45<span>month</span></h1>
-            <ul>
-              <li>All basic features</li>
-              <li>JavaScript + React</li>
-              <li>Certificate + Mentorship</li>
-            </ul>
-            <button>Choose Pro</button>
-          </div>
-          <div class="price-card">
-            <h3>Premium</h3>
-            <h1>$65<span>month</span></h1>
-            <ul>
-              <li>All pro features</li>
-              <li>Job Support</li>
-              <li>1-on-1 Calls</li>
-            </ul>
-            <button>Choose Premium</button>
-          </div>
-        </div>
-      </section>
-    </section>
-    <section>
+  <section id="about">
+    <h2>Why choose us?</h2>
+    <ol>
+      <li>Learn from industry experts</li>
+      <li>Hands-on projects</li>
+      <li>Flexible learning schedule</li>
+    </ol>
+  </section>
 
-      <section>
-        <!--TESTIMONIAL SECTION-->
-        <section id="testimonials">
-          <h2>What Our Students Says</h2>
-          <div class="testimonials-container">
-            <div class="testimonials">
-              <p>"TechLearn changed my life. I got a job in 2 months!"</p>
-              <h4>Brain,Nairobi </h4>
-              <span>⭐⭐⭐⭐⭐</span>
-            </div>
-            <div claass="testimonials">
-              <p>"Best explanation of HTML & CSS. So simple to follow"</p>
-              <h4>Sarah, Kisumu </h4>
-              <span>⭐⭐⭐⭐</span>
-            </div>
-            <div class="testimonial">
-              <p>"The projects are real. I built my portfolio here"</p>
-              <h4>Leovard, Busia</h4>
-              <span>⭐⭐⭐⭐</span>
-            </div>
-          </div>
-        </section>
-      </section>
-      <section>
-        <!--NEWSLETTER FORM-->
-        <section id="newsletter">
-          <h2>Join Our Newsletter</h2>
-          <p>Get free tutorials and job tips weekly</p>
-          <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <button type="submit">Subscribe Now</button>
-          </form>
-        </section>
-
-
-
-      </section>
-      <section>
-        <!--ABOUT SECTION-->
-        <section id="about">
-          <h2>Why choose us?</h2>
-          <ol>
-            <li>Learn from industry experts</li>
-            <li>Hands-on projects and exercises</li>
-            <li>Flexible learning schedule</li>
-          </ol>
-        </section>
-      </section>
-      <section>
-        <!--CONTACT + FOOTER-->
-        <footer id="contact">
-          <h2>Contact Us</h2>
-          <p>Email:<a href=" mailto:@rizyjoe45@gmail.com">rizyjoe45@gmail.com</a></p>
-          <p>Phone: +254795370806</p>
-          <p>&copy2026 TechLearn. All rights resvered.</p>
-        </footer>
-      </section>
-
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:rizyjoe45@gmail.com">rizyjoe45@gmail.com</a></p>
+    <p>Phone: +254795370806</p>
+    <p>&copy; 2026 TechLearn. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
